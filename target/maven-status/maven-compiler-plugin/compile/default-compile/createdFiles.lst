@@ -1,0 +1,5 @@
+com/example/techtalk/TechTalkConfiguration.class
+com/example/techtalk/controllers/IndexController.class
+com/example/techtalk/AjaxAwareAuthenticationEntryPoint.class
+com/example/techtalk/SecurityConfiguration.class
+com/example/techtalk/TechtalkApplication.class

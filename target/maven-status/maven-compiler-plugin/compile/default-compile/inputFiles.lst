@@ -1,3 +1,12 @@
-/home/oliver/GitHub/techtalk/src/main/java/com/example/techtalk/controllers/IndexController.java
-/home/oliver/GitHub/techtalk/src/main/java/com/example/techtalk/TechtalkApplication.java
-/home/oliver/GitHub/techtalk/src/main/java/com/example/techtalk/SecurityConfiguration.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/dal/TechTalkDao.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/TechtalkApplication.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/SecurityConfiguration.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/TechTalkConfiguration.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/LoadDatabase.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/controllers/IndexController.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/PresentationRepository.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/Exceptions/PresentationNotFoundAdvice.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/domain/Presentation.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/Exceptions/PresentationNotFoundException.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/service/TechTalkService.java
+/home/oliver/GitHub/TechTalk/src/main/java/com/example/techtalk/AjaxAwareAuthenticationEntryPoint.java

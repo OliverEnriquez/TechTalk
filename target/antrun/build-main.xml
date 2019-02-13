@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <delete>
+    <fileset dir="/home/oliver/GitHub/TechTalk/src/main/resources/static/js/minify"/>
+    <fileset dir="/home/oliver/GitHub/TechTalk/src/main/resources/static/css/minify"/>
+  </delete>
+</target>
+</project>
