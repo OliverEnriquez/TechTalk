@@ -132,8 +132,8 @@
 
                             </cssSourceFiles>
                             <cssFinalFile>combined.css</cssFinalFile>
-                            <jsSourceDir>js/minify</jsSourceDir>
-                            <jsTargetDir>js/minify</jsTargetDir>
+                            <jsSourceDir>js</jsSourceDir>
+                            <jsTargetDir>js</jsTargetDir>
                             <jsSourceFiles>
                                 <jsSourceFile>tech-talk.js</jsSourceFile>
                             </jsSourceFiles>
