@@ -1,3 +1,4 @@
+//
 renderPresentationsInfo = function (sku){
     if (!$("#techtalk-info").length) {
         $.ajax({
