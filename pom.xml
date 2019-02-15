@@ -126,14 +126,14 @@
                             <webappSourceDir>${basedir}/src/main/resources/static</webappSourceDir>
                             <webappTargetDir>${basedir}/src/main/resources/static</webappTargetDir>
                             <charset>UTF-8</charset>
-                            <cssSourceDir>css</cssSourceDir>
-                            <cssTargetDir>css</cssTargetDir>
+                            <cssSourceDir>css/minify</cssSourceDir>
+                            <cssTargetDir>css/minify</cssTargetDir>
                             <cssSourceFiles>
 
                             </cssSourceFiles>
                             <cssFinalFile>combined.css</cssFinalFile>
-                            <jsSourceDir>js</jsSourceDir>
-                            <jsTargetDir>js</jsTargetDir>
+                            <jsSourceDir>js/minify</jsSourceDir>
+                            <jsTargetDir>js/minify</jsTargetDir>
                             <jsSourceFiles>
                                 <jsSourceFile>tech-talk-info.js</jsSourceFile>
                             </jsSourceFiles>
