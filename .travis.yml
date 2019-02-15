@@ -4,7 +4,6 @@ language: java
 jdk:
   - oraclejdk8
 
-sudo: requiredysql -u root -e "GRANT ALL ON Hackthon2.* TO 'Hackthon2'@'localhost';"
 
 script: mvn clean verify
 after_success:
