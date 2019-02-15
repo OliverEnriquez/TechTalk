@@ -135,7 +135,7 @@
                             <jsSourceDir>js/minify</jsSourceDir>
                             <jsTargetDir>js/minify</jsTargetDir>
                             <jsSourceFiles>
-                                <jsSourceFile>tech-talk-info.js</jsSourceFile>
+                                <jsSourceFile>tech-talk.js</jsSourceFile>
                             </jsSourceFiles>
                             <jsFinalFile>combined.js</jsFinalFile>
                             <jsEngine>CLOSURE</jsEngine>
