@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SecurityConfiguration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">techtalk</a> &gt; <a href="index.source.html" class="el_package">com.example.techtalk</a> &gt; <span class="el_source">SecurityConfiguration.java</span></div><h1>SecurityConfiguration.java</h1><pre class="source lang-java linenums">package com.example.techtalk;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.ldap.core.support.BaseLdapPathContextSource;
+import org.springframework.ldap.core.support.LdapContextSource;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
+@Configuration
+@EnableWebSecurity
+<span class="fc" id="L17">public class SecurityConfiguration extends WebSecurityConfigurerAdapter {</span>
+    @Override
+    protected  void configure(HttpSecurity http) throws Exception {
+<span class="fc" id="L20">        http.csrf().disable().authorizeRequests().anyRequest().authenticated()</span>
+<span class="fc" id="L21">		.and().exceptionHandling().authenticationEntryPoint(new AjaxAwareAuthenticationEntryPoint(&quot;/login&quot;));</span>
+<span class="fc" id="L22">		http.formLogin().failureUrl(&quot;/login?error&quot;).defaultSuccessUrl(&quot;/&quot;).loginPage(&quot;/login&quot;).permitAll().and()</span>
+<span class="fc" id="L23">				.logout().logoutRequestMatcher(new AntPathRequestMatcher(&quot;/logout&quot;)).logoutSuccessUrl(&quot;/login&quot;)</span>
+<span class="fc" id="L24">				.permitAll();</span>
+<span class="fc" id="L25">		http.exceptionHandling().accessDeniedPage(&quot;/login&quot;);</span>
+<span class="fc" id="L26">    }</span>
+
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+<span class="fc" id="L30">        auth.ldapAuthentication().userSearchFilter(&quot;(&amp;(objectClass=user)(sAMAccountName={0}))&quot;)</span>
+<span class="fc" id="L31">                .contextSource(ldapContextSource());</span>
+<span class="fc" id="L32">    }</span>
+
+    @Bean
+    public BaseLdapPathContextSource ldapContextSource() {
+<span class="fc" id="L36">        LdapContextSource bean = new LdapContextSource();</span>
+<span class="fc" id="L37">        String[] urls = new String[2];</span>
+<span class="fc" id="L38">        urls[0] = &quot;ldap://ma1c-dc01.1aauto.inc:3268&quot;;</span>
+<span class="fc" id="L39">        urls[1] = &quot;ldap://ma1c-dc02.1aauto.inc:3268&quot;;</span>
+<span class="fc" id="L40">        bean.setUrls(urls);</span>
+<span class="fc" id="L41">        bean.setBase(&quot;DC=1AAUTO,DC=INC&quot;);</span>
+<span class="fc" id="L42">        bean.setUserDn(&quot;bindldap@1aauto.inc&quot;);</span>
+<span class="fc" id="L43">        bean.setPassword(&quot;4GxnMTGcPFuLWQsv&quot;);</span>
+<span class="fc" id="L44">        bean.setPooled(true);</span>
+<span class="fc" id="L45">        bean.setReferral(&quot;follow&quot;);</span>
+<span class="fc" id="L46">        return bean;</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
