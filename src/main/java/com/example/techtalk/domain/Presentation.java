@@ -1,8 +1,7 @@
 package com.example.techtalk.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Presentation {
@@ -15,9 +14,11 @@ public class Presentation {
     private String presenter;
     private String intro;
 
+    @OneToMany(targetEntity = Review.class, mappedBy = "id", orphanRemoval = false, fetch = FetchType.LAZY)
+    private Set<Review> reviews;
+
     protected Presentation() {
     }
-
 
 
     public Presentation(String title, String date, String presenter, String intro) {
@@ -65,5 +66,13 @@ public class Presentation {
 
     public void setIntro(String intro) {
         this.intro = intro;
+    }
+
+    public Set<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(Set<Review> reviews) {
+        this.reviews = reviews;
     }
 }

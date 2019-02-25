@@ -1,6 +1,7 @@
 package com.example.techtalk.controllers;
 
 import com.example.techtalk.domain.Presentation;
+import com.example.techtalk.domain.Review;
 import com.example.techtalk.service.TechTalkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ErrorController;
@@ -27,7 +28,7 @@ public class IndexController implements ErrorController {
     String index(Model model, Principal principal) {
         Long count = service.getCountPresentation();
         model.addAttribute("count", count);
-        userName = userNameLdapUtil.getUserNameLdap();
+//        userName = userNameLdapUtil.getUserNameLdap();
         model.addAttribute("userName", userName);
         return "tthome";
     }
@@ -35,7 +36,9 @@ public class IndexController implements ErrorController {
     @RequestMapping("/presentation")
     String getPresentations(Model model) {
         List<Presentation> presentations = service.getPresentations();
+        List<Review> reviews = service.getReviews();
         model.addAttribute("presentations", presentations);
+        model.addAttribute("reviews", reviews);
         return "infoSection/techTalk";
     }
 
@@ -48,6 +51,19 @@ public class IndexController implements ErrorController {
             System.out.println(ex.getMessage());
         }
 
+        return "redirect:/";
+    }
+
+
+
+    @PostMapping("/review")
+    String addReview(Review review, Model model) {
+        review.setUser("oenriquez");
+        try {
+            service.addReview(review);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
         return "redirect:/";
     }
 

@@ -9,4 +9,8 @@ public interface PresentationRepository extends JpaRepository<Presentation, Long
     @Query("SELECT COUNT(p) FROM Presentation p")
     Long getCountPresentations();
 
+
+
+
+
 }

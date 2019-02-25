@@ -2,6 +2,7 @@ package com.example.techtalk.service;
 
 import com.example.techtalk.dal.TechTalkDao;
 import com.example.techtalk.domain.Presentation;
+import com.example.techtalk.domain.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,14 @@ public class TechTalkService {
 
     public void addPresentation(Presentation presentation) {
         techTalkDao.addPresentation(presentation);
+    }
+
+    public List<Review> getReviews() {
+        return techTalkDao.getReviews();
+    }
+
+    public void addReview(Review review) {
+        techTalkDao.addReview(review);
     }
 
 
