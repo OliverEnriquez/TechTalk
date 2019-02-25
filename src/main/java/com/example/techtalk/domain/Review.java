@@ -21,6 +21,7 @@ public class Review {
     @Fetch(FetchMode.JOIN)
     private Presentation presentation;
 
+    protected Review() {}
 
     public Review(Long idPresentation, String comment, Integer rating, String user) {
         this.idPresentation = idPresentation;

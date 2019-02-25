@@ -28,7 +28,7 @@ public class IndexController implements ErrorController {
     String index(Model model, Principal principal) {
         Long count = service.getCountPresentation();
         model.addAttribute("count", count);
-//        userName = userNameLdapUtil.getUserNameLdap();
+        userName = userNameLdapUtil.getUserNameLdap();
         model.addAttribute("userName", userName);
         return "tthome";
     }

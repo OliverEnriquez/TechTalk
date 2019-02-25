@@ -36,7 +36,7 @@ public class TechTalkDao {
     }
 
     public void addReview(Review review) {
-        reviewRepository.getPresentationsReview();
+        reviewRepository.save(new Review(review.getIdPresentation(), review.getComment(), review.getRating(),review.getUser()));
     }
 
 
