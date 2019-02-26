@@ -16,10 +16,7 @@ public class Review {
     private Integer rating;
     private String user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id", insertable = false, updatable = false)
-    @Fetch(FetchMode.JOIN)
-    private Presentation presentation;
+
 
     protected Review() {}
 
@@ -68,13 +65,5 @@ public class Review {
 
     public void setUser(String user) {
         this.user = user;
-    }
-
-    public Presentation getPresentation() {
-        return presentation;
-    }
-
-    public void setPresentation(Presentation presentation) {
-        this.presentation = presentation;
     }
 }

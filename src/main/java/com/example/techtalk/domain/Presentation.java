@@ -13,19 +13,20 @@ public class Presentation {
     private String date;
     private String presenter;
     private String intro;
+    private Double avgRating;
 
-    @OneToMany(targetEntity = Review.class, mappedBy = "id", orphanRemoval = false, fetch = FetchType.LAZY)
-    private Set<Review> reviews;
+
 
     protected Presentation() {
     }
 
 
-    public Presentation(String title, String date, String presenter, String intro) {
+    public Presentation(String title, String date, String presenter, String intro, Double avgRating) {
         this.title = title;
         this.date = date;
         this.presenter = presenter;
         this.intro = intro;
+        this.avgRating = avgRating;
     }
 
     public Long getId() {
@@ -68,11 +69,11 @@ public class Presentation {
         this.intro = intro;
     }
 
-    public Set<Review> getReviews() {
-        return reviews;
+    public Double getAvgRating() {
+        return avgRating;
     }
 
-    public void setReviews(Set<Review> reviews) {
-        this.reviews = reviews;
+    public void setAvgRating(Double avgRating) {
+        this.avgRating = avgRating;
     }
 }

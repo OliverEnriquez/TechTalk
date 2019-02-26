@@ -27,9 +27,11 @@ public class IndexController implements ErrorController {
     @RequestMapping("/")
     String index(Model model, Principal principal) {
         Long count = service.getCountPresentation();
+
         model.addAttribute("count", count);
         userName = userNameLdapUtil.getUserNameLdap();
         model.addAttribute("userName", userName);
+
         return "tthome";
     }
 
@@ -37,8 +39,10 @@ public class IndexController implements ErrorController {
     String getPresentations(Model model) {
         List<Presentation> presentations = service.getPresentations();
         List<Review> reviews = service.getReviews();
+        Double avgRating = service.getAvgRating();
         model.addAttribute("presentations", presentations);
         model.addAttribute("reviews", reviews);
+        model.addAttribute("rating", avgRating);
         return "infoSection/techTalk";
     }
 
@@ -58,7 +62,7 @@ public class IndexController implements ErrorController {
 
     @PostMapping("/review")
     String addReview(Review review, Model model) {
-        review.setUser("oenriquez");
+        review.setUser(userName);
         try {
             service.addReview(review);
         } catch (Exception ex) {

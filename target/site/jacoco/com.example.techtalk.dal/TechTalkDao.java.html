@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TechTalkDao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">techtalk</a> &gt; <a href="index.source.html" class="el_package">com.example.techtalk.dal</a> &gt; <span class="el_source">TechTalkDao.java</span></div><h1>TechTalkDao.java</h1><pre class="source lang-java linenums">package com.example.techtalk.dal;
 
 import com.example.techtalk.PresentationRepository;
+import com.example.techtalk.ReviewRepository;
 import com.example.techtalk.domain.Presentation;
+import com.example.techtalk.domain.Review;
+import com.example.techtalk.dto.PrestReviewDto;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,21 +13,42 @@ import java.util.List;
 public class TechTalkDao {
 
     private final PresentationRepository presentationRepository;
+    private final ReviewRepository reviewRepository;
 
-<span class="fc" id="L14">    public TechTalkDao(PresentationRepository presentationRepository) {</span>
-<span class="fc" id="L15">        this.presentationRepository = presentationRepository;</span>
-<span class="fc" id="L16">    }</span>
+<span class="nc" id="L18">    public TechTalkDao(PresentationRepository presentationRepository, ReviewRepository reviewRepository) {</span>
+<span class="nc" id="L19">        this.presentationRepository = presentationRepository;</span>
+<span class="nc" id="L20">        this.reviewRepository = reviewRepository;</span>
+<span class="nc" id="L21">    }</span>
 
     public List&lt;Presentation&gt; getPresentations() {
-<span class="nc" id="L19">        return presentationRepository.findAll();</span>
+<span class="nc" id="L24">        return presentationRepository.findAll();</span>
     }
 
     public Long getCountPresentations() {
-<span class="nc" id="L23">        return presentationRepository.getCountPresentations();</span>
+<span class="nc" id="L28">        return presentationRepository.getCountPresentations();</span>
     }
 
     public void addPresentation(Presentation presentation) {
-<span class="nc" id="L27">        presentationRepository.save(new Presentation(presentation.getTitle(), presentation.getDate(), presentation.getPresenter(), presentation.getIntro()));</span>
-<span class="nc" id="L28">    }</span>
+<span class="nc" id="L32">        presentationRepository.save(new Presentation(presentation.getTitle(), presentation.getDate(), presentation.getPresenter(), presentation.getIntro(), 0.0));</span>
+<span class="nc" id="L33">    }</span>
+
+    public List&lt;Review&gt; getReviews() {
+<span class="nc" id="L36">        return reviewRepository.findAll();</span>
+    }
+
+    public void addReview(Review review) {
+<span class="nc" id="L40">        reviewRepository.save(new Review(review.getIdPresentation(), review.getComment(), review.getRating(),review.getUser()));</span>
+<span class="nc" id="L41">        presentationRepository.getUpdateAvg(reviewRepository.avgRating(review.getIdPresentation()), review.getIdPresentation());</span>
+<span class="nc" id="L42">    }</span>
+
+    public Double getAvgRating(Integer id) {
+<span class="nc" id="L45">       return reviewRepository.avgRating((long) 2);</span>
+    }
+
+//    public List&lt;PrestReviewDto&gt; getReviewsPresentations(Long id) {
+//        return presentationRepository.getReviewsPresentations((long)2);
+//    }
+
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

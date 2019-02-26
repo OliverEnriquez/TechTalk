@@ -2,28 +2,46 @@
 
 import com.example.techtalk.dal.TechTalkDao;
 import com.example.techtalk.domain.Presentation;
+import com.example.techtalk.domain.Review;
+import com.example.techtalk.dto.PrestReviewDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-<span class="fc" id="L11">public class TechTalkService {</span>
+<span class="nc" id="L13">public class TechTalkService {</span>
 
     @Autowired
     private TechTalkDao techTalkDao;
 
     public List&lt;Presentation&gt; getPresentations() {
-<span class="nc" id="L17">        return techTalkDao.getPresentations();</span>
+<span class="nc" id="L19">        return techTalkDao.getPresentations();</span>
     }
 
     public Long getCountPresentation() {
-<span class="nc" id="L21">        return techTalkDao.getCountPresentations();</span>
+<span class="nc" id="L23">        return techTalkDao.getCountPresentations();</span>
     }
 
     public void addPresentation(Presentation presentation) {
-<span class="nc" id="L25">        techTalkDao.addPresentation(presentation);</span>
-<span class="nc" id="L26">    }</span>
+<span class="nc" id="L27">        techTalkDao.addPresentation(presentation);</span>
+<span class="nc" id="L28">    }</span>
+
+    public List&lt;Review&gt; getReviews() {
+<span class="nc" id="L31">        return techTalkDao.getReviews();</span>
+    }
+
+    public void addReview(Review review) {
+<span class="nc" id="L35">        techTalkDao.addReview(review);</span>
+<span class="nc" id="L36">    }</span>
+
+    public Double getAvgRating() {
+<span class="nc" id="L39">        return techTalkDao.getAvgRating(2);</span>
+    }
+
+//    public List&lt;PrestReviewDto&gt; getReviewsPresentations(Long id) {
+//        return techTalkDao.getReviewsPresentations(id);
+//    }
 
 
 

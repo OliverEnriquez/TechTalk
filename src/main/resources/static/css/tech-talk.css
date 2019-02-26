@@ -25,3 +25,9 @@
 .rating-stars ul > li.star.selected > i.fa {
     color:#FF912C;
 }
+
+@media (min-width: 1200px) {
+    .modal-content > .container {
+        width: 970px;
+    }
+}

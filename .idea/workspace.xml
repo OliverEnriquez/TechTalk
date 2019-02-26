@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="069cbe15-4cee-43e8-bc76-860606569a6d" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/combined.js" afterPath="$PROJECT_DIR$/target/classes/static/js/combined.js" />
@@ -9,6 +10,61 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tech-talk.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tech-talk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/infoSection/techTalk.html" afterPath="$PROJECT_DIR$/target/classes/templates/infoSection/techTalk.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/layout/head.html" afterPath="$PROJECT_DIR$/target/classes/templates/layout/head.html" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/css/minify/combined.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/js/minify/combined.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/techtalk-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/techtalk-0.0.1-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/ReviewRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/ReviewRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Presentation.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Presentation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Review.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Review.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/techtalk/service/TechTalkService.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/techtalk/service/TechTalkService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/combined.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/combined.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/combined.min.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/combined.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/tech-talk.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/tech-talk.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/combined.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/combined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/combined.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/combined.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tech-talk.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tech-talk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/infoSection/techTalk.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/infoSection/techTalk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/head.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/presentationInfo.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/presentationInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/combined.js" afterPath="$PROJECT_DIR$/target/classes/static/js/combined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/combined.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/combined.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tech-talk-info.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tech-talk-info.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tech-talk.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tech-talk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/infoSection/techTalk.html" afterPath="$PROJECT_DIR$/target/classes/templates/infoSection/techTalk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/layout/head.html" afterPath="$PROJECT_DIR$/target/classes/templates/layout/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/IndexController.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/IndexController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/IndexController.java.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/IndexController.java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/index.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/index.source.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.controllers/index.source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/TechTalkDao.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/TechTalkDao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/TechTalkDao.java.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/TechTalkDao.java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/index.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/index.source.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.dal/index.source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/Presentation.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/Presentation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/Presentation.java.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/Presentation.java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/index.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/index.source.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.domain/index.source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/TechTalkService.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/TechTalkService.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/TechTalkService.java.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/TechTalkService.java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/index.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/index.source.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk.service/index.source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/LoadDatabase.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/LoadDatabase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/LoadDatabase.java.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/LoadDatabase.java.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/index.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/index.source.html" afterPath="$PROJECT_DIR$/target/site/jacoco/com.example.techtalk/index.source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,28 +90,49 @@
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="350">
               <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+=======
+            <state relative-caret-position="576">
+              <caret line="44" column="48" lean-forward="false" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="TechTalkServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
               <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+=======
+      <file leaf-file-name="review.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/review.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="TechTalkDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="332">
               <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+=======
+      <file leaf-file-name="TechTalkDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="78" lean-forward="false" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -65,10 +142,15 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/head.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
+<<<<<<< Updated upstream
               <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
               <folding>
                 <marker date="1551198020449" expanded="true" signature="1304:1327" ph="..." />
               </folding>
+=======
+              <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -77,10 +159,15 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/presentationInfo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="666">
+<<<<<<< Updated upstream
               <caret line="37" column="73" lean-forward="false" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
               <folding>
                 <marker date="1551198020449" expanded="true" signature="2647:2767" ph="..." />
               </folding>
+=======
+              <caret line="37" column="97" lean-forward="false" selection-start-line="37" selection-start-column="97" selection-end-line="37" selection-end-column="97" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -88,6 +175,7 @@
       <file leaf-file-name="techTalk.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/infoSection/techTalk.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="237">
               <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
@@ -97,6 +185,11 @@
                 <marker date="1551198020449" expanded="true" signature="5448:6168" ph="{...}" />
                 <marker date="1551198020449" expanded="true" signature="5692:6041" ph="//..." />
               </folding>
+=======
+            <state relative-caret-position="273">
+              <caret line="33" column="207" lean-forward="false" selection-start-line="33" selection-start-column="207" selection-end-line="33" selection-end-column="207" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -106,9 +199,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
               <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+<<<<<<< Updated upstream
               <folding>
                 <marker date="1551198020449" expanded="true" signature="41:2295" ph="{...}" />
               </folding>
+=======
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -120,7 +217,34 @@
               <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+<<<<<<< Updated upstream
                 <marker date="1551198020445" expanded="true" signature="1500:1506" ph=" }" />
+=======
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#831#832#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1031#1032#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1327#1328#0" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -129,12 +253,18 @@
       <file leaf-file-name="LoadDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="216">
               <caret line="13" column="95" lean-forward="false" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
               <folding>
                 <marker date="1551198020445" expanded="true" signature="704:714" ph="{...}" />
                 <marker date="1551198020445" expanded="true" signature="704:721" ph="{...}" />
               </folding>
+=======
+            <state relative-caret-position="180">
+              <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -142,8 +272,13 @@
       <file leaf-file-name="PresentationRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="90">
               <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+=======
+            <state relative-caret-position="72">
+              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -157,14 +292,15 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="sql" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>thymeleaf</find>
+      <find>sm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,7 +320,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/hello.sh" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout/mainLayout.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/tech-talk.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/presentation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/ExtendedPresentationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/extendedRepositoryIpl.java" />
@@ -193,26 +328,37 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4cec9678-9881-4bff-bd4f-603b03f87406/console.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Presentation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/infoSection/techTalk.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout/contentHeader.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/Exceptions/PresentationNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/Exceptions/PresentationNotFoundAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/tech-talk-info.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/tthome.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/service/TechTalkService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/createPresentation.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/head.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/util/UserLdapUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/UserNameLdapUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout/sidebar.html" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/ReviewRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/dto/PrestReviewDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/service/TechTalkService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/tech-talk.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Review.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/presentationInfo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/tech-talk.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Presentation.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/infoSection/techTalk.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/head.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/review.html" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -246,7 +392,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -259,104 +405,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="techtalk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechTalk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -512,11 +561,17 @@
       <workItem from="1549982836381" duration="12000" />
       <workItem from="1549988460375" duration="3000" />
       <workItem from="1550071248548" duration="20122000" />
+      <workItem from="1551191944967" duration="13000" />
+      <workItem from="1551196471831" duration="1492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="40679000" />
+=======
+    <option name="totallyTimeSpent" value="50676000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
@@ -530,7 +585,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.50426894" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48481676" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48481676" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -553,6 +608,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< Updated upstream
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -575,6 +631,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="2020" y="96" width="1720" height="884" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,14 +648,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/techtalk/service/TechTalkService.java</url>
-          <line>24</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -604,6 +659,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2610">
@@ -647,12 +703,14 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/SecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -726,6 +784,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="143" column="10" lean-forward="false" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
+<<<<<<< Updated upstream
         </state>
       </provider>
     </entry>
@@ -743,6 +802,8 @@
           <folding>
             <marker date="1551198020449" expanded="true" signature="41:2295" ph="{...}" />
           </folding>
+=======
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -779,6 +840,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Presentation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -790,6 +852,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.1.RELEASE/spring-data-jpa-1.11.1.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -829,6 +893,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+<<<<<<< Updated upstream
         </state>
       </provider>
     </entry>
@@ -843,6 +908,8 @@
             <marker date="1551198020449" expanded="true" signature="5448:6168" ph="{...}" />
             <marker date="1551198020449" expanded="true" signature="5692:6041" ph="//..." />
           </folding>
+=======
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -858,7 +925,7 @@
         <state relative-caret-position="222">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -870,44 +937,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/util/UserLdapUtil.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="90">
           <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
           <folding />
+=======
+        <state relative-caret-position="182">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/UserNameLdapUtil.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="216">
           <caret line="13" column="95" lean-forward="false" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
           <folding>
             <marker date="1551198020445" expanded="true" signature="704:714" ph="{...}" />
             <marker date="1551198020445" expanded="true" signature="704:721" ph="{...}" />
           </folding>
+=======
+        <state relative-caret-position="198">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/techtalk/TechTalkServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/service/TechTalkService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="630">
+          <caret line="43" column="7" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< Updated upstream
+=======
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/dto/PrestReviewDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/tech-talk.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+<<<<<<< Updated upstream
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+=======
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createPresentation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/head.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="138">
           <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
           <folding>
@@ -921,25 +1053,123 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/UserNameLdapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+=======
+        <state relative-caret-position="180">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/controllers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="44" column="48" lean-forward="false" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/dal/TechTalkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="78" lean-forward="false" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/presentationInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="97" lean-forward="false" selection-start-line="37" selection-start-column="97" selection-end-line="37" selection-end-column="97" />
+          <folding />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/tech-talk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/domain/Presentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+<<<<<<< Updated upstream
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+=======
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/LoadDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="108">
+          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+=======
+        <state relative-caret-position="180">
+          <caret line="15" column="95" lean-forward="false" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
+          <folding />
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/techtalk/PresentationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/infoSection/techTalk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="33" column="207" lean-forward="false" selection-start-line="33" selection-start-column="207" selection-end-line="33" selection-end-column="207" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/review.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="350">
           <caret line="41" column="38" lean-forward="false" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding />
@@ -958,6 +1188,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+=======
+        <state relative-caret-position="188">
+          <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>

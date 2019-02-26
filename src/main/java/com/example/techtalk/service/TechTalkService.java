@@ -3,6 +3,7 @@ package com.example.techtalk.service;
 import com.example.techtalk.dal.TechTalkDao;
 import com.example.techtalk.domain.Presentation;
 import com.example.techtalk.domain.Review;
+import com.example.techtalk.dto.PrestReviewDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +34,14 @@ public class TechTalkService {
     public void addReview(Review review) {
         techTalkDao.addReview(review);
     }
+
+    public Double getAvgRating() {
+        return techTalkDao.getAvgRating(2);
+    }
+
+//    public List<PrestReviewDto> getReviewsPresentations(Long id) {
+//        return techTalkDao.getReviewsPresentations(id);
+//    }
 
 
 

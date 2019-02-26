@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IndexController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">techtalk</a> &gt; <a href="index.source.html" class="el_package">com.example.techtalk.controllers</a> &gt; <span class="el_source">IndexController.java</span></div><h1>IndexController.java</h1><pre class="source lang-java linenums">package com.example.techtalk.controllers;
 
 import com.example.techtalk.domain.Presentation;
+import com.example.techtalk.domain.Review;
 import com.example.techtalk.service.TechTalkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.ErrorController;
@@ -14,46 +15,65 @@ import java.security.Principal;
 import java.util.List;
 
 @Controller
-<span class="fc" id="L17">public class IndexController implements ErrorController {</span>
+<span class="nc" id="L18">public class IndexController implements ErrorController {</span>
 
     @Autowired
     TechTalkService service;
 
     String userName;
 
-<span class="fc" id="L24">    UserNameLdapUtil userNameLdapUtil = new UserNameLdapUtil();</span>
+<span class="nc" id="L25">    UserNameLdapUtil userNameLdapUtil = new UserNameLdapUtil();</span>
 
     @RequestMapping(&quot;/&quot;)
     String index(Model model, Principal principal) {
-<span class="nc" id="L28">        Long count = service.getCountPresentation();</span>
-<span class="nc" id="L29">        model.addAttribute(&quot;count&quot;, count);</span>
-<span class="nc" id="L30">        userName = userNameLdapUtil.getUserNameLdap();</span>
-<span class="nc" id="L31">        model.addAttribute(&quot;userName&quot;, userName);</span>
-<span class="nc" id="L32">        return &quot;tthome&quot;;</span>
+<span class="nc" id="L29">        Long count = service.getCountPresentation();</span>
+
+<span class="nc" id="L31">        model.addAttribute(&quot;count&quot;, count);</span>
+<span class="nc" id="L32">        userName = userNameLdapUtil.getUserNameLdap();</span>
+<span class="nc" id="L33">        model.addAttribute(&quot;userName&quot;, userName);</span>
+
+<span class="nc" id="L35">        return &quot;tthome&quot;;</span>
     }
 
     @RequestMapping(&quot;/presentation&quot;)
     String getPresentations(Model model) {
-<span class="nc" id="L37">        List&lt;Presentation&gt; presentations = service.getPresentations();</span>
-<span class="nc" id="L38">        model.addAttribute(&quot;presentations&quot;, presentations);</span>
-<span class="nc" id="L39">        return &quot;infoSection/techTalk&quot;;</span>
+<span class="nc" id="L40">        List&lt;Presentation&gt; presentations = service.getPresentations();</span>
+<span class="nc" id="L41">        List&lt;Review&gt; reviews = service.getReviews();</span>
+<span class="nc" id="L42">        Double avgRating = service.getAvgRating();</span>
+<span class="nc" id="L43">        model.addAttribute(&quot;presentations&quot;, presentations);</span>
+<span class="nc" id="L44">        model.addAttribute(&quot;reviews&quot;, reviews);</span>
+<span class="nc" id="L45">        model.addAttribute(&quot;rating&quot;, avgRating);</span>
+<span class="nc" id="L46">        return &quot;infoSection/techTalk&quot;;</span>
     }
 
     @PostMapping(&quot;/presentation&quot;)
     String addPresentation(Presentation presentation, Model model) {
-<span class="nc" id="L44">        presentation.setPresenter(userName);</span>
+<span class="nc" id="L51">        presentation.setPresenter(userName);</span>
         try {
-<span class="nc" id="L46">            service.addPresentation(presentation);</span>
-<span class="nc" id="L47">        } catch (Exception ex) {</span>
-<span class="nc" id="L48">            System.out.println(ex.getMessage());</span>
-<span class="nc" id="L49">        }</span>
+<span class="nc" id="L53">            service.addPresentation(presentation);</span>
+<span class="nc" id="L54">        } catch (Exception ex) {</span>
+<span class="nc" id="L55">            System.out.println(ex.getMessage());</span>
+<span class="nc" id="L56">        }</span>
 
-<span class="nc" id="L51">        return &quot;redirect:/&quot;;</span>
+<span class="nc" id="L58">        return &quot;redirect:/&quot;;</span>
+    }
+
+
+
+    @PostMapping(&quot;/review&quot;)
+    String addReview(Review review, Model model) {
+<span class="nc" id="L65">        review.setUser(userName);</span>
+        try {
+<span class="nc" id="L67">            service.addReview(review);</span>
+<span class="nc" id="L68">        } catch (Exception ex) {</span>
+<span class="nc" id="L69">            System.out.println(ex.getMessage());</span>
+<span class="nc" id="L70">        }</span>
+<span class="nc" id="L71">        return &quot;redirect:/&quot;;</span>
     }
 
     @Override
     public String getErrorPath() {
-<span class="nc" id="L56">        return null;</span>
+<span class="nc" id="L76">        return null;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
