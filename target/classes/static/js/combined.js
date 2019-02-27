@@ -20,18 +20,8 @@ renderPresentationsInfo = function (sku){
         });
     }
 }
-<<<<<<< Updated upstream
 
-$(document).ready(function(){
-
-    /* 1. Visualizing things on Hover - See next part for action on click */
-    $('#stars li').on('mouseover', function(){
-        var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
-
-        // Now highlight all the stars that's not after the current hovered star
-        $(this).parent().children('li.star').each(function(e){
-=======
-$(document).ready(function() {
+$(document).ready(function () {
 
     /* 1. Visualizing things on Hover - See next part for action on click */
     $('#stars li').on('mouseover', function () {
@@ -39,7 +29,6 @@ $(document).ready(function() {
 
         // Now highlight all the stars that's not after the current hovered star
         $(this).parent().children('li.star').each(function (e) {
->>>>>>> Stashed changes
             if (e < onStar) {
                 $(this).addClass('hover');
             }
@@ -48,25 +37,15 @@ $(document).ready(function() {
             }
         });
 
-<<<<<<< Updated upstream
-    }).on('mouseout', function(){
-        $(this).parent().children('li.star').each(function(e){
-=======
     }).on('mouseout', function () {
         $(this).parent().children('li.star').each(function (e) {
->>>>>>> Stashed changes
             $(this).removeClass('hover');
         });
     });
 
 
     /* 2. Action to perform on click */
-<<<<<<< Updated upstream
-    $('#stars li').on('click', function(){
-        console.log("Hello punk!")
-=======
     $('#stars li').on('click', function () {
->>>>>>> Stashed changes
         var onStar = parseInt($(this).data('value'), 10); // The star currently selected
         var stars = $(this).parent().children('li.star');
 
@@ -87,20 +66,6 @@ $(document).ready(function() {
         else {
             msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
         }
-<<<<<<< Updated upstream
-        responseMessage(msg);
-
-    });
-
-
-});
-
-
-function responseMessage(msg) {
-    $('.success-box').fadeIn(200);
-    $('.success-box div.text-message').html("<span>" + msg + "</span>");
-}
-=======
         document.getElementById("reviewBtn").disabled = false;
         $('#stars li.selected').last().attr('name', 'rating');
         $('#rating').attr('value', ratingValue)
@@ -128,8 +93,59 @@ function responseMessage(msg) {
             // Boolean expression evaluate to false and the empty string will be returned
             $modalAttribute.attr("value", dataValue);
             $modalAttribute.text(dataValue || '');
+
         });
+        console.log($target.data('avg'));
+        if($target.data('avg')>0.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            console.log("1 star");
+        }
+        if($target.data('avg')>1.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            console.log("2 star");
+        }
+        if($target.data('avg')>2.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            console.log("3 star");
+            $('#star3').addClass('btn-warning').removeClass('btn-grey');
+        }
+        if($target.data('avg')>3.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            $('#star3').addClass('btn-warning').removeClass('btn-grey');
+            $('#star4').addClass('btn-warning').removeClass('btn-grey');
+            console.log("4 star");
+        }
+        if ($target.data('avg')>4.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            $('#star3').addClass('btn-warning').removeClass('btn-grey');
+            $('#star4').addClass('btn-warning').removeClass('btn-grey');
+            $('#star5').addClass('btn-warning').removeClass('btn-grey');
+            console.log("5 star");
+        }
+
     });
 
+
+
+
 });
->>>>>>> Stashed changes
+
+
+$('#reviewModal').on('show.bs.modal', function(e) {
+
+    var $modal = $(this);
+
+    $.ajax({
+        cache: false,
+        type: 'POST',
+        url: 'backend.php',
+        data: 'EID=' + 58,
+        success: function(data) {
+
+        }
+    });
+})

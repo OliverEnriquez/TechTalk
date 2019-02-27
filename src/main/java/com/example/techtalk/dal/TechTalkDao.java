@@ -36,6 +36,10 @@ public class TechTalkDao {
         return reviewRepository.findAll();
     }
 
+    public List<Review> getReviewByPresentationId(Long id) {
+        return reviewRepository.getReviewByPresentationId(id);
+    }
+
     public void addReview(Review review) {
         reviewRepository.save(new Review(review.getIdPresentation(), review.getComment(), review.getRating(),review.getUser()));
         presentationRepository.getUpdateAvg(reviewRepository.avgRating(review.getIdPresentation()), review.getIdPresentation());

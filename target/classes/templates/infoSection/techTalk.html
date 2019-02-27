@@ -1,4 +1,3 @@
-
 <div class="col-md-12">
     <div class="panel panel-default" id="techtalk-info">
         <div class="panel-heading">
@@ -20,208 +19,86 @@
                     <th>Presenter</th>
                     <th>Intro</th>
                     <th></th>
+                    <th></th>
                 </tr>
                 </thead>
-                <tbody>
-<<<<<<< Updated upstream
-                <tr th:each= "info : ${presentations}">
-=======
+                <tbody th:id="${presentations}">
                 <tr th:each="info : ${presentations}">
->>>>>>> Stashed changes
                     <td th:text="*{info.title}" th:id="*{info.id}"></td>
                     <td th:text="*{info.date}"></td>
                     <td th:text="*{info.presenter}"></td>
                     <td th:text="*{info.intro}"></td>
-<<<<<<< Updated upstream
-                    <td><a class="pull-right dropdown-toggle"  th:attr="data-myvalue='Review ' + *{info.title}, data-presenter='Presenter: ' + *{info.presenter}, data-date='Date: ' + *{info.date}, data-id=*{info.id}"  data-toggle="modal" data-target="#presentationModal" href="#">View</a></td>
-=======
                     <td><a class="pull-right dropdown-toggle"
                            th:attr="data-myvalue='Review ' + *{info.title}, data-presenter='Presenter: ' + *{info.presenter}, data-date='Date: ' + *{info.date}, data-id=*{info.id}"
                            data-toggle="modal" data-target="#presentationModal" href="#">Review</a></td>
-                    <td ><a class="pull-right dropdown-toggle"
-                           th:attr="data-myvalue='Review ' + *{info.title}, data-presenter='Presenter: ' + *{info.presenter}, data-date='Date: ' + *{info.date}, data-id=*{info.id}, data-avg=*{info.avgRating}"
-                           data-toggle="modal" data-target="#reviewModal" href="#" >View</a></td>
+                    <td><a class="pull-right dropdown-toggle" th:id="'btn-review-'+*{info.id}"
+                           th:attr="data-myvalue='Review ' + *{info.title}, data-presenter='Presenter: ' + *{info.presenter}, data-date='Date: ' + *{info.date}, data-id=*{info.id}, data-avg=*{#numbers.formatDecimal(info.avgRating, 0, 'COMMA', 2, 'POINT')}"
+                           data-toggle="modal" href="#reviewModal" data-target=#reviewModal>View</a></td>
                 </tr>
                 </tbody>
             </table>
+            <h5 class="modal-title" th:text="*{id}"></h5>
         </div>
     </div>
+
+    <script type="application/javascript" th:each="info : ${presentations}">
+        /*<![CDATA[*/
+
+        $('#btn-review-'+[[*{info.id}]]).on('click', function () {
+            $("#comment-div").html("");
+            $.ajax({
+                url: "/comments/"+[[*{info.id}]],
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        }).done(function (data) {
+                console.log("id: " + data)
+                var comments = data;
+                comments.forEach(function (element) {
+                    var star1 = element[2]>=1?"class='btn btn-warning btn-xs'":"class='btn btn-grey btn-xs'";
+                    var star2 = element[2]>=2?"class='btn btn-warning btn-xs'":"class='btn btn-grey btn-xs'";
+                    var star3 = element[2]>=3?"class='btn btn-warning btn-xs'":"class='btn btn-grey btn-xs'";
+                    var star4 = element[2]>=4?"class='btn btn-warning btn-xs'":"class='btn btn-grey btn-xs'";
+                    var star5 = element[2]>=5?"class='btn btn-warning btn-xs'":"class='btn btn-grey btn-xs'";
+                    $("#comment-div").append(
+                       "<div class='row'>\n" +
+                        "                                <div class='col-sm-3'>\n" +
+                        "                                    <img src='http://dummyimage.com/60x60/666/ffffff&text=No+Image' class='img-rounded'>\n" +
+                        "                                    <div class='review-block-name'><a href='#'>"+element[4]+"</a></div>\n" +
+                        "                                    <div class='review-block-date'></div>\n" +
+                        "                                </div>\n" +
+                        "                                <div class='col-sm-9'>\n" +
+                        "                                    <div class='review-block-rate'>\n" +
+                        "                                        <button type='button' "+star1+" aria-label='Left Align'>\n" +
+                        "                                            <i class='far fa-star'></i>\n" +
+                        "                                        </button>\n" +
+                        "                                        <button type='button' "+star2+" aria-label='Left Align'>\n" +
+                        "                                            <i class='far fa-star'></i>\n" +
+                        "                                        </button>\n" +
+                        "                                        <button type='button' "+star3+" aria-label='Left Align'>\n" +
+                        "                                            <i class='far fa-star'></i>\n" +
+                        "                                        </button>\n" +
+                        "                                        <button type='button' " +star4+ " \n" +
+                        "                                                aria-label='Left Align'>\n" +
+                        "                                            <i class='far fa-star'></i>\n" +
+                        "                                        </button>\n" +
+                        "                                        <button type='button'" +star5+ "\n" +
+                        "                                                aria-label='Left Align'>\n" +
+                        "                                            <i class='far fa-star'></i>\n" +
+                        "                                        </button>\n" +
+                        "                                    </div>\n" +
+                        "                                    <div class='review-block-description'>\n" +element[3]+
+                        "                                    </div>\n" +
+                        "                                </div>\n" +
+                        "                            </div>\n" +
+                        "                            <hr/>"
+                    )
+                });
+            });
+        });
+        /*]]>*/
+    </script>
     <section th:replace="createPresentation"></section>
     <section th:replace="presentationInfo"></section>
     <section th:replace="review"></section>
-
-
 </div>
-<div class="col-md-12">
-    <div class="panel panel-default" id="techtalk-inf">
-        <div class="panel-heading">
-            Tech Talks
-            <ul class="pull-right panel-settings panel-button-tab-right">
-                <li class="dropdown">
-                    <a class="pull-right dropdown-toggle" data-toggle="modal" data-target="#myModal" href="#">
-                        <em class="fas fa-plus"></em>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="panel-body">
-            <table id="review-table" class="table table-striped table-bordered" style="width:100%">
-                <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Rating</th>
-                    <th>Review</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="info : ${reviews}">
-                    <td th:text="*{info.idPresentation}"></td>
-                    <td th:text="*{info.rating}"></td>
-                    <td th:text="*{info.comment}"></td>
->>>>>>> Stashed changes
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <section th:replace="createPresentation"></section>
-    <section th:replace="presentationInfo"></section>
-
-
-</div>
-<<<<<<< Updated upstream
-<div class="col-md-12">
-    <div class="panel panel-default" id="techtalk-info">
-        <div class="panel-heading">
-            Tech Talks
-            <ul class="pull-right panel-settings panel-button-tab-right">
-                <li class="dropdown">
-                    <a class="pull-right dropdown-toggle"   data-toggle="modal" data-target="#myModal" href="#">
-                        <em class="fas fa-plus"></em>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="panel-body">
-            <table id="review-table" class="table table-striped table-bordered" style="width:100%">
-                <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Review</th>
-                    <th>Rating</th>
-                    <th>User</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each= "info : ${reviews}">
-                    <td th:text="*{info.idPresentation}"></td>
-                    <td th:text="*{info.comment}"></td>
-                    <td th:text="*{info.rating}"></td>
-                    <td th:text="*{info.user}"></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <section th:replace="createPresentation"></section>
-    <section th:replace="presentationInfo"></section>
-
-
-</div>
-<script type="application/javascript">
-
-    $(document).ready(function() {
-=======
-<script type="application/javascript">
-
-
-    $(document).ready(function () {
->>>>>>> Stashed changes
-
-        /* 1. Visualizing things on Hover - See next part for action on click */
-        $('#stars li').on('mouseover', function () {
-            var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
-
-            // Now highlight all the stars that's not after the current hovered star
-            $(this).parent().children('li.star').each(function (e) {
-                if (e < onStar) {
-                    $(this).addClass('hover');
-                }
-                else {
-                    $(this).removeClass('hover');
-                }
-            });
-
-        }).on('mouseout', function () {
-            $(this).parent().children('li.star').each(function (e) {
-                $(this).removeClass('hover');
-            });
-        });
-
-
-        /* 2. Action to perform on click */
-        $('#stars li').on('click', function () {
-<<<<<<< Updated upstream
-            console.log("Hello punk!")
-=======
->>>>>>> Stashed changes
-            var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-            var stars = $(this).parent().children('li.star');
-
-            for (i = 0; i < stars.length; i++) {
-                $(stars[i]).removeClass('selected');
-            }
-
-            for (i = 0; i < onStar; i++) {
-                $(stars[i]).addClass('selected');
-            }
-
-            // JUST RESPONSE (Not needed)
-            var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
-            var msg = "";
-            if (ratingValue > 1) {
-                msg = "Thanks! You rated this " + ratingValue + " stars.";
-            }
-            else {
-                msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
-            }
-<<<<<<< Updated upstream
-
-=======
-            document.getElementById("reviewBtn").disabled = false;
->>>>>>> Stashed changes
-            $('#stars li.selected').last().attr('name', 'rating');
-            $('#rating').attr('value', ratingValue)
-
-
-        })
-
-<<<<<<< Updated upstream
-        var ATTRIBUTES = ['myvalue', 'presenter', 'date', 'id'];
-=======
-        var ATTRIBUTES = ['myvalue', 'presenter', 'date', 'id', 'avg'];
->>>>>>> Stashed changes
-
-        $('[data-toggle="modal"]').on('click', function (e) {
-            // convert target (e.g. the button) to jquery object
-            var $target = $(e.target);
-            // modal targeted by the button
-            var modalSelector = $target.data('target');
-
-            // iterate over each possible data-* attribute
-            ATTRIBUTES.forEach(function (attributeName) {
-                // retrieve the dom element corresponding to current attribute
-                var $modalAttribute = $(modalSelector + ' #modal-' + attributeName);
-                var dataValue = $target.data(attributeName);
-
-                // if the attribute value is empty, $target.data() will return undefined.
-                // In JS boolean expressions return operands and are not coerced into
-                // booleans. That way is dataValue is undefined, the left part of the following
-                // Boolean expression evaluate to false and the empty string will be returned
-                $modalAttribute.attr("value", dataValue);
-                $modalAttribute.text(dataValue || '');
-            });
-        });
-
-    });
-</script>

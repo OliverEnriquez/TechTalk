@@ -31,6 +31,10 @@ public class TechTalkService {
         return techTalkDao.getReviews();
     }
 
+    public List<Review> getReviewByPresentationId(Long id) {
+        return techTalkDao.getReviewByPresentationId(id);
+    }
+
     public void addReview(Review review) {
         techTalkDao.addReview(review);
     }

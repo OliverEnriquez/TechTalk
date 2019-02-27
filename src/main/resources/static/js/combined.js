@@ -20,7 +20,8 @@ renderPresentationsInfo = function (sku){
         });
     }
 }
-$(document).ready(function() {
+
+$(document).ready(function () {
 
     /* 1. Visualizing things on Hover - See next part for action on click */
     $('#stars li').on('mouseover', function () {
@@ -92,7 +93,59 @@ $(document).ready(function() {
             // Boolean expression evaluate to false and the empty string will be returned
             $modalAttribute.attr("value", dataValue);
             $modalAttribute.text(dataValue || '');
+
         });
+        console.log($target.data('avg'));
+        if($target.data('avg')>0.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            console.log("1 star");
+        }
+        if($target.data('avg')>1.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            console.log("2 star");
+        }
+        if($target.data('avg')>2.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            console.log("3 star");
+            $('#star3').addClass('btn-warning').removeClass('btn-grey');
+        }
+        if($target.data('avg')>3.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            $('#star3').addClass('btn-warning').removeClass('btn-grey');
+            $('#star4').addClass('btn-warning').removeClass('btn-grey');
+            console.log("4 star");
+        }
+        if ($target.data('avg')>4.5) {
+            $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            $('#star3').addClass('btn-warning').removeClass('btn-grey');
+            $('#star4').addClass('btn-warning').removeClass('btn-grey');
+            $('#star5').addClass('btn-warning').removeClass('btn-grey');
+            console.log("5 star");
+        }
+
     });
 
+
+
+
 });
+
+
+$('#reviewModal').on('show.bs.modal', function(e) {
+
+    var $modal = $(this);
+
+    $.ajax({
+        cache: false,
+        type: 'POST',
+        url: 'backend.php',
+        data: 'EID=' + 58,
+        success: function(data) {
+
+        }
+    });
+})

@@ -15,8 +15,7 @@ public interface PresentationRepository extends JpaRepository<Presentation, Long
     @Query("SELECT COUNT(p) FROM Presentation p")
     Long getCountPresentations();
 
-//    @Query("SELECT p.title, r.rating FROM Presentation p JOIN p.reviews WHERE p.id = :idPresentation")
-//    List<PrestReviewDto> geteviewsPresentations(@Param("idPresentation") Integer idPresentation);
+
 
     @Transactional
     @Modifying

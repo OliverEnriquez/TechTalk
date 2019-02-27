@@ -131,13 +131,14 @@
                             <cssSourceFiles>
                                 <cssSourceFile>tech-talk.css</cssSourceFile>
                             </cssSourceFiles>
-                            <cssFinalFile>combined.css</cssFinalFile>
+                            <cssFinalFile>minify/combined.css</cssFinalFile>
                             <jsSourceDir>js</jsSourceDir>
                             <jsTargetDir>js</jsTargetDir>
                             <jsSourceFiles>
                                 <jsSourceFile>tech-talk.js</jsSourceFile>
+                                <jsSourceFile>presentation.js</jsSourceFile>
                             </jsSourceFiles>
-                            <jsFinalFile>combined.js</jsFinalFile>
+                            <jsFinalFile>minify/combined.js</jsFinalFile>
                             <jsEngine>CLOSURE</jsEngine>
                         </configuration>
                         <goals>

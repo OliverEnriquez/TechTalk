@@ -17,7 +17,6 @@ public class Review {
     private String user;
 
 
-
     protected Review() {}
 
     public Review(Long idPresentation, String comment, Integer rating, String user) {

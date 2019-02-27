@@ -11,13 +11,11 @@ import org.springframework.context.annotation.Configuration;
 <span class="nc" id="L11">public class LoadDatabase {</span>
 
     @Bean
-    CommandLineRunner initDataBase(PresentationRepository repository, ReviewRepository review) {
+    CommandLineRunner initDataBase(PresentationRepository repository) {
 <span class="nc" id="L15">        return arg -&gt; {</span>
 <span class="nc" id="L16">            System.out.println(&quot;Preloading: &quot; + repository.save(new Presentation(&quot;Jnuit Test&quot;, &quot;15/02/2019&quot;, &quot;Oliver Enriquez&quot;, &quot;Test&quot;, 0.0)));</span>
-<span class="nc" id="L17">            System.out.println(&quot;Preloading: &quot; + repository.save(new Presentation(&quot;Git&quot;, &quot;23/02/2019&quot;, &quot;Oliver Enriquez&quot;, &quot;Test&quot;, 0.0 )));</span>
-<span class="nc" id="L18">            review.save(new Review((long) 2,&quot;Comment&quot;, 5, &quot;oenriquez&quot;));</span>
-
-<span class="nc" id="L20">        };</span>
+<span class="nc" id="L17">            System.out.println(&quot;Preloading: &quot; + repository.save(new Presentation(&quot;Git&quot;, &quot;29/03/2019&quot;, &quot;Oliver Enriquez&quot;, &quot;Test&quot;, 0.0 )));</span>
+<span class="nc" id="L18">        };</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

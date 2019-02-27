@@ -11,12 +11,10 @@ import org.springframework.context.annotation.Configuration;
 public class LoadDatabase {
 
     @Bean
-    CommandLineRunner initDataBase(PresentationRepository repository, ReviewRepository review) {
+    CommandLineRunner initDataBase(PresentationRepository repository) {
         return arg -> {
-            System.out.println("Preloading: " + repository.save(new Presentation("Jnuit Test", "15/02/2019", "Oliver Enriquez", "Test", 0.0)));
-            System.out.println("Preloading: " + repository.save(new Presentation("Git", "23/02/2019", "Oliver Enriquez", "Test", 0.0 )));
-            review.save(new Review((long) 2,"Comment", 5, "oenriquez"));
-
+            System.out.println("Preloading: " + repository.save(new Presentation("Jnuit Test", "28/03/2019", "Oliver Enriquez", "Test", 0.0)));
+            System.out.println("Preloading: " + repository.save(new Presentation("Git", "29/03/2019", "Oliver Enriquez", "Test", 0.0 )));
         };
     }
 }

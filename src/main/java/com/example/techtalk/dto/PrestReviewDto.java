@@ -2,19 +2,30 @@ package com.example.techtalk.dto;
 
 public class PrestReviewDto {
 
+    private Long id;
     private String title;
     private String presenter;
     private Integer rating;
-    private String review;
+    private String comment;
+
 
     protected PrestReviewDto() {
     }
 
-    public PrestReviewDto(String title, String presenter, Integer rating, String review) {
+    public PrestReviewDto(Long id, String title, String presenter, Integer rating, String comment) {
+        this.id = id;
         this.title = title;
         this.presenter = presenter;
         this.rating = rating;
-        this.review = review;
+        this.comment = comment;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -41,11 +52,11 @@ public class PrestReviewDto {
         this.rating = rating;
     }
 
-    public String getReview() {
-        return review;
+    public String getComment() {
+        return comment;
     }
 
-    public void setReview(String review) {
-        this.review = review;
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 }

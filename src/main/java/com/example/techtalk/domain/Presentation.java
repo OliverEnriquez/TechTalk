@@ -1,6 +1,9 @@
 package com.example.techtalk.domain;
 
+import com.example.techtalk.dto.PrestReviewDto;
+
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -15,11 +18,7 @@ public class Presentation {
     private String intro;
     private Double avgRating;
 
-
-
-    protected Presentation() {
-    }
-
+    protected Presentation(){};
 
     public Presentation(String title, String date, String presenter, String intro, Double avgRating) {
         this.title = title;
@@ -76,4 +75,6 @@ public class Presentation {
     public void setAvgRating(Double avgRating) {
         this.avgRating = avgRating;
     }
+
+
 }

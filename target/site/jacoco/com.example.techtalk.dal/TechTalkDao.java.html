@@ -15,10 +15,10 @@ public class TechTalkDao {
     private final PresentationRepository presentationRepository;
     private final ReviewRepository reviewRepository;
 
-<span class="nc" id="L18">    public TechTalkDao(PresentationRepository presentationRepository, ReviewRepository reviewRepository) {</span>
-<span class="nc" id="L19">        this.presentationRepository = presentationRepository;</span>
-<span class="nc" id="L20">        this.reviewRepository = reviewRepository;</span>
-<span class="nc" id="L21">    }</span>
+<span class="fc" id="L18">    public TechTalkDao(PresentationRepository presentationRepository, ReviewRepository reviewRepository) {</span>
+<span class="fc" id="L19">        this.presentationRepository = presentationRepository;</span>
+<span class="fc" id="L20">        this.reviewRepository = reviewRepository;</span>
+<span class="fc" id="L21">    }</span>
 
     public List&lt;Presentation&gt; getPresentations() {
 <span class="nc" id="L24">        return presentationRepository.findAll();</span>

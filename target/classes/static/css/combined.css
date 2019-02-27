@@ -24,9 +24,6 @@
 /* Selected state of the stars */
 .rating-stars ul > li.star.selected > i.fa {
     color:#FF912C;
-<<<<<<< Updated upstream
-}
-=======
 }
 
 @media (min-width: 1200px) {
@@ -34,4 +31,3 @@
         width: 970px;
     }
 }
->>>>>>> Stashed changes

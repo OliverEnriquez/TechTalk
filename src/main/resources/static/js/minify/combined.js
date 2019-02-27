@@ -75,14 +75,17 @@ $(document).ready(function () {
         console.log($target.data('avg'));
         if($target.data('avg')>0.5) {
             $('#star1').addClass('btn-warning').removeClass('btn-grey');
+            console.log("1 star");
         }
         if($target.data('avg')>1.5) {
             $('#star1').addClass('btn-warning').removeClass('btn-grey');
             $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            console.log("2 star");
         }
         if($target.data('avg')>2.5) {
             $('#star1').addClass('btn-warning').removeClass('btn-grey');
             $('#star2').addClass('btn-warning').removeClass('btn-grey');
+            console.log("3 star");
             $('#star3').addClass('btn-warning').removeClass('btn-grey');
         }
         if($target.data('avg')>3.5) {
@@ -90,6 +93,7 @@ $(document).ready(function () {
             $('#star2').addClass('btn-warning').removeClass('btn-grey');
             $('#star3').addClass('btn-warning').removeClass('btn-grey');
             $('#star4').addClass('btn-warning').removeClass('btn-grey');
+            console.log("4 star");
         }
         if ($target.data('avg')>4.5) {
             $('#star1').addClass('btn-warning').removeClass('btn-grey');
@@ -97,6 +101,7 @@ $(document).ready(function () {
             $('#star3').addClass('btn-warning').removeClass('btn-grey');
             $('#star4').addClass('btn-warning').removeClass('btn-grey');
             $('#star5').addClass('btn-warning').removeClass('btn-grey');
+            console.log("5 star");
         }
 
     });
@@ -105,6 +110,7 @@ $(document).ready(function () {
 
 
 });
+
 
 $('#reviewModal').on('show.bs.modal', function(e) {
 
@@ -119,4 +125,15 @@ $('#reviewModal').on('show.bs.modal', function(e) {
 
         }
     });
-});
+});renderPresentationsInfo = function (){
+    if (!$("#techtalk-info").length) {
+        $.ajax({
+            url : "/presentation/",
+            error : function(jqXHR, textStatus, errorThrown) {
+                console.log(errorThrown);
+            }
+        }).done(function(data) {
+            $("#techtalk-content").html(data);
+        });
+    }
+}
