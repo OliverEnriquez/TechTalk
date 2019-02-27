@@ -7,6 +7,7 @@ import com.example.techtalk.domain.Review;
 import com.example.techtalk.dto.PrestReviewDto;
 import org.springframework.stereotype.Repository;
 
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Repository
@@ -29,6 +30,7 @@ public class TechTalkDao {
     }
 
     public void addPresentation(Presentation presentation) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         presentationRepository.save(new Presentation(presentation.getTitle(), presentation.getDate(), presentation.getPresenter(), presentation.getIntro(), 0.0));
     }
 
@@ -45,9 +47,6 @@ public class TechTalkDao {
         presentationRepository.getUpdateAvg(reviewRepository.avgRating(review.getIdPresentation()), review.getIdPresentation());
     }
 
-    public Double getAvgRating(Integer id) {
-       return reviewRepository.avgRating((long) 2);
-    }
 
 //    public List<PrestReviewDto> getReviewsPresentations(Long id) {
 //        return presentationRepository.getReviewsPresentations((long)2);
