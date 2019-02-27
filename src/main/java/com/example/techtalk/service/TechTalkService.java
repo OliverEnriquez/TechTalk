@@ -39,9 +39,6 @@ public class TechTalkService {
         techTalkDao.addReview(review);
     }
 
-    public Double getAvgRating() {
-        return techTalkDao.getAvgRating(2);
-    }
 
 //    public List<PrestReviewDto> getReviewsPresentations(Long id) {
 //        return techTalkDao.getReviewsPresentations(id);
