@@ -1,9 +1,8 @@
 package com.example.techtalk.domain;
 
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Review {
@@ -15,15 +14,18 @@ public class Review {
     private String comment;
     private Integer rating;
     private String user;
+    private String date;
 
 
-    protected Review() {}
+    protected Review() {
+    }
 
-    public Review(Long idPresentation, String comment, Integer rating, String user) {
+    public Review(Long idPresentation, String comment, Integer rating, String user, String date) {
         this.idPresentation = idPresentation;
         this.comment = comment;
         this.rating = rating;
         this.user = user;
+        this.date = date;
     }
 
     public Long getId() {
@@ -64,5 +66,13 @@ public class Review {
 
     public void setUser(String user) {
         this.user = user;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }

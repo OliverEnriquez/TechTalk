@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
@@ -31,8 +32,8 @@ public class ReviewRepositoryTest {
     public void setup() {
         docker = new Presentation("Docker", "08/03/1990", "Oliver Enriquez", "This a intro", 0.0);
         presentationRepository.save(docker);
-        fistReview = new Review(docker.getId(), "Nice!", 5, "Jon Snow");
-        secondReview = new Review(docker.getId(), "Pff", 1, "Goku");
+        fistReview = new Review(docker.getId(), "Nice!", 5, "Jon Snow", LocalDate.now().toString());
+        secondReview = new Review(docker.getId(), "Pff", 1, "Goku", LocalDate.now().toString());
     }
 
     @Test

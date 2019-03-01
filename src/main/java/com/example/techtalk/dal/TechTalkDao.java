@@ -43,8 +43,8 @@ public class TechTalkDao {
     }
 
     public void addReview(Review review) {
-        reviewRepository.save(new Review(review.getIdPresentation(), review.getComment(), review.getRating(),review.getUser()));
-        presentationRepository.getUpdateAvg(reviewRepository.avgRating(review.getIdPresentation()), review.getIdPresentation());
+        reviewRepository.save(new Review(review.getIdPresentation(), review.getComment(), review.getRating(),review.getUser(), review.getDate()));
+            presentationRepository.getUpdateAvg(reviewRepository.avgRating(review.getIdPresentation()), review.getIdPresentation());
     }
 
 

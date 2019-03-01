@@ -14,6 +14,7 @@ import util.UserNameLdapUtil;
 import javax.validation.Valid;
 import java.security.Principal;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Controller
@@ -69,7 +70,10 @@ public class IndexController implements ErrorController {
 
     @PostMapping("/review")
     String addReview(Review review, Model model) {
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/YYYY");
         review.setUser(userName);
+        review.setDate(formatter.format(date));
         try {
             service.addReview(review);
         } catch (Exception ex) {
